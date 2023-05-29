@@ -1,0 +1,71 @@
+@media screen and (min-width: 1200px) {
+  /* cài kích thước của khối */
+  section > .container {
+    width: 1170px;
+    margin: auto;
+    display: block;
+
+    padding: 30px 50px;
+  }
+  .chanhcv {
+    position: relative;
+  }
+  /* đặt thuộc tính của ảnh nền banner */
+  #banner .anhnen {
+    height: 60vh !important;
+    width: 100vw;
+  }
+
+  #nav-bar .container .col-2 {
+    justify-content: center;
+    border: 1px solid #dee2e6;
+  }
+  /* đặt thuộc tính cho anh chính CV */
+  .anhcv {
+    display: block;
+    width: 40px;
+    height: auto;
+    position: absolute;
+    top: -30px;
+    transform: scale(4);
+    z-index: 1;
+    border-radius: 100%;
+    padding: 2px;
+    background-color: #fff;
+    box-shadow: 0px 0px 1px 0px #000;
+  }
+  /* cài đặ khối sau tiêu đề dự án chứa icon */
+  .head-table {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  }
+  .ic-properties {
+    color: #0d6efd;
+    border: 1px solid #0d6efd;
+    font-size: 20px;
+    padding: 10px;
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    border-radius: 100%;
+  }
+  /* làm chiều cao background các cột bằng nhau  */
+  #job-info .p-3 {
+    height: 100%;
+  }
+  /* điều chỉnh chứng chỉ-giải thưởng khi màn hình laptop */
+  #certificate .container .screenl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #certificate .container .textcerti {
+    padding-left: 20px;
+  }
+  #certificate .container .text-job {
+    margin: 0px;
+  }
+  #certificate .container .screenl .w-100 {
+    height: 100%;
+  }
+}

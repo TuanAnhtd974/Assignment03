@@ -1,0 +1,79 @@
+@media screen and (max-width: 768px) {
+  .container {
+    width: 400px;
+    display: block;
+
+    padding: 20px 50px;
+    margin: 20px auto;
+    background-color: blue;
+  }
+  h3 {
+    padding: 10px 0px;
+    margin-bottom: 10px;
+  }
+  /*  thứ tự các khối  */
+  .container .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 20px;
+  }
+  section {
+    background-color: #e7f5ff;
+    padding: 20px;
+  }
+  #goals {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #scopes {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #team {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  #primary {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  #timeline {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  /*  khối goals */
+  .goal1 {
+    flex-direction: column;
+  }
+  #goals .goal1 .col-2 {
+    width: 100%;
+  }
+  /* khối scope */
+  #scopes .scope-d {
+    flex-direction: column;
+  }
+  .scope1 h4 {
+    margin-bottom: 5px;
+  }
+  /* khối team */
+  #team .team1 {
+    flex-direction: column;
+  }
+  .member {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20px;
+  }
+  /* khối primary */
+  #primary .d-flex {
+    flex-direction: column;
+  }
+  /* khối timeline */
+  #timeline .Tb1 {
+    align-items: start;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+}
